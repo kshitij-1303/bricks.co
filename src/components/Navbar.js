@@ -9,7 +9,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Left - Logo */}
-      <div className="navbar-left">
+
+      <div className="navbar-left" onClick={() => navigate("/")}>
         <div className="logo-box">CB</div>
         <span className="brand-name">CivilBuild</span>
       </div>
