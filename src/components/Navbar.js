@@ -1,8 +1,11 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
       {/* Left - Logo */}
@@ -22,8 +25,13 @@ const Navbar = () => {
 
       {/* Right - Buttons */}
       <div className="navbar-right">
-        <button className="btn-outline">Sign Up</button>
-        <button className="btn-filled">Sign In</button>
+        <button className="btn-filled" onClick={() => navigate("/login")}>
+          Sign In
+        </button>
+
+        <button className="btn-outline" onClick={() => navigate("/signup")}>
+          Sign Up
+        </button>
       </div>
 
       <div className="cart">

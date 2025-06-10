@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Import all images
 import bricksImage from "../assets/images-bricks.co/bricks.jpeg";
@@ -62,15 +63,29 @@ const Categories = () => {
     },
   ];
 
+  const passRouteString = (name) => {
+    const lowerCasedName = name.toLowerCase();
+    const nameArray = lowerCasedName.split(" ");
+    let routeString = "";
+    if (nameArray.length === 3) {
+      routeString = "/categories/" + nameArray[0] + "-and-" + nameArray[2];
+    } else {
+      routeString = "/categories/" + nameArray[0] + "-" + nameArray[1];
+    }
+    return routeString;
+  };
+
   return (
     <div className="categories">
       <h1>Shop by category</h1>
       <div className="all-categories">
         {categoryData.map((category) => (
-          <div key={category.id} className="category">
-            <img src={category.image} alt={category.alt} loading="lazy" />
-            <p>{category.name}</p>
-          </div>
+          <Link to={passRouteString(category.name)}>
+            <div key={category.id} className="category">
+              <img src={category.image} alt={category.alt} loading="lazy" />
+              <p>{category.name}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
