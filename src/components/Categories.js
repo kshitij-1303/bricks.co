@@ -80,8 +80,8 @@ const Categories = () => {
       <h1>Shop by category</h1>
       <div className="all-categories">
         {categoryData.map((category) => (
-          <Link to={passRouteString(category.name)}>
-            <div key={category.id} className="category">
+          <Link key={category.id} to={passRouteString(category.name)}>
+            <div className="category">
               <img src={category.image} alt={category.alt} loading="lazy" />
               <p>{category.name}</p>
             </div>
