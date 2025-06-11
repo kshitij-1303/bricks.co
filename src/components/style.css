@@ -748,6 +748,9 @@ input[type="password"] {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .product-card img {
@@ -772,6 +775,7 @@ input[type="password"] {
   border: 1px solid #00acc1;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
 
 /* Responsive layout for tablets and smaller */
