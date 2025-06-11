@@ -4,21 +4,23 @@ const Footer = () => {
   return (
     <div className="footer-wrapper">
       <div className="footer-top">
-        <div className="feature">
+        <div className="feature-footer">
           <div>
             <h3>Fast Site Delivery</h3>
           </div>
           <p>Direct delivery to your construction site with proper handling.</p>
         </div>
-        <div className="feature">
+        <div className="feature-footer">
           <div>
             <h3>Quality Guaranteed</h3>
           </div>
           <p>All materials tested and certified for construction standards.</p>
         </div>
-        <div className="feature">
+        <div className="feature-footer">
           <div>
-            <h3>24/7 Support</h3>
+            <h3>
+              24/7 <span className="break"></span> Support
+            </h3>
           </div>
           <p>Round-the-clock customer support for urgent requirements.</p>
         </div>
@@ -75,7 +77,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Section */}
-            <div className="footer-section">
+            <div className="footer-contact">
               <h4>Contact</h4>
               <ul>
                 <li>

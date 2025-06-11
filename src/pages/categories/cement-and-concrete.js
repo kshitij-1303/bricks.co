@@ -1,7 +1,6 @@
 import React from "react";
 import "../../components/style.css";
-// import Footer from "./components/Footer";
-import Footer from "../../components/Footer"; // if in the same folder
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 const products = [
