@@ -95,7 +95,7 @@
   }
   .cart {
     width: 40%;
-    margin-left: 11rem;
+    margin-left: 13rem;
   }
   .search-input {
     width: 70%;
@@ -104,13 +104,19 @@
 
 @media (max-width: 480px) {
   .cart {
-    margin-left: 6.5rem;
+    margin-left: 6rem;
   }
 }
 
 @media (max-width: 620px) {
   .cart {
-    margin-left: 8rem;
+    margin-left: 9rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .cart {
+    margin-left: 4rem;
   }
 }
 
@@ -484,6 +490,9 @@
 }
 
 @media (max-width: 480px) {
+  .footer {
+    width: 100%;
+  }
   .break {
     display: block;
   }
